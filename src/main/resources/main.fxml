@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml"
-            xmlns="http://javafx.com/javafx"
-            fx:controller="eu.rapasoft.controller.MainController"
-            prefHeight="100.0" prefWidth="100.0">
-    <Label text="😊" style="-fx-font-size: 50"/>
-</AnchorPane>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="500.0"
+      xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="eu.rapasoft.controller.MainController">
+    <ComboBox fx:id="selection" prefWidth="500.0" BorderPane.alignment="CENTER"/>
+    <ListView fx:id="listOfTasks" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"
+              VBox.vgrow="ALWAYS"/>
+</VBox>

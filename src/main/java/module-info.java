@@ -5,6 +5,8 @@ module JavaFxSkeletonApp {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
+    requires io.reactivex.rxjava2;
+    requires rxjavafx;
 
     exports eu.rapasoft;
     exports eu.rapasoft.controller;

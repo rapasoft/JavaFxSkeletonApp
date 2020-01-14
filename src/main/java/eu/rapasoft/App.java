@@ -23,7 +23,7 @@ public class App {
     public void start(@Observes @StartupScene Stage stage) throws IOException {
         URL mainFxml = getClass().getResource(MAIN_FXML);
         Parent root = fxmlLoader.load(mainFxml.openStream());
-        Scene scene = new Scene(root, 100, 100);
+        Scene scene = new Scene(root, 500, 500);
 
         stage.setTitle("HelloFX");
         stage.setScene(scene);
